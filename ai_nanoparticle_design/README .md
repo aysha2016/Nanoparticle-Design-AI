@@ -43,8 +43,7 @@ Perfect for rapid prototyping of smart lab automation tools!
 ## ▶️ Run the System
 
 1. **Install dependencies**  
-   *(Only if you're running the AI model training)*
-
+   
    ```bash
    pip install pandas scikit-learn numpy
    ```
@@ -57,33 +56,5 @@ Perfect for rapid prototyping of smart lab automation tools!
 
 ---
 
-## 📈 Sample Output
+ 
 
-```
-[Robot] Executing formulation: {'polymer_pct': 60, 'peg_da': 2000, 'ligand': 'TfR', 'charge_mv': -5}
-Simulated Results: size=105.2 nm, encapsulation=58.3%, BBB=0.78
-
-[AI] Trained on 10 experiments.
-
---- Iteration 1 ---
-[Robot] Executing formulation: {'polymer_pct': 70, 'peg_da': 2000, 'ligand': 'TfR', 'charge_mv': -5}
-...
-Final dataset:
-   polymer_pct  peg_da ligand  charge_mv  size_nm  encapsulation_pct  bbb_score
-...
-```
-
----
-
-## 🤖 Notes
-
-- Real lab hardware (like Opentrons or microfluidic systems) can replace the `robot_controller` logic.
-- Extend the AI model or reward strategy to optimize for multiple objectives (e.g., Pareto front).
-
----
-
-## 🚀 Future Extensions
-
-- Integrate Bayesian Optimization or Reinforcement Learning.
-- Add real-world data logging & instrumentation.
-- Replace simulators with real assay results.
